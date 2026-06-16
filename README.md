@@ -80,20 +80,6 @@ Plunge any webpage into shadow and light with a dynamic torch overlay. Your curs
 | Resize Spotlight | `Scroll Up/Down` |
 
 </td>
-<td width="40%" align="center">
-
-```
-Press T to activate
-┌─────────────────┐
-│  ░░░░░░░░░░░░░  │
-│ ░░░░░░░░░░░░░░░ │
-│ ░░░░ ◉ ░░░░░░░ │
-│ ░░░░░░░░░░░░░░░ │
-│  ░░░░░░░░░░░░░  │
-└─────────────────┘
-```
-
-</td>
 </tr>
 </table>
 
@@ -103,20 +89,6 @@ Press T to activate
 
 <table>
 <tr>
-<td width="40%" align="center">
-
-```
-Pilot a fighter ship
-    ▲
-   ◄►
-    ▼
-
-W/A/S/D to move
-Space to fire
-B to scan
-```
-
-</td>
 <td width="60%">
 
 Pilot a nimble fighter ship and annihilate destructible webpage elements. Features Asteroids-style physics and devastating particle effects.
@@ -194,24 +166,6 @@ A standalone, high-octane arcade game. Battle 10 waves of increasingly challengi
 | Toggle Music | `M` |
 | Replay/Restart | `R` |
 | Exit Game | `C/Esc` |
-
-</td>
-<td width="40%" align="center">
-
-```
-╔═══════════════════╗
-║  COMBAT ARENA     ║
-║  ═════════════    ║
-║   Wave: 10/10     ║
-│   Score: 50,000   ║
-║                   ║
-║       ⚔️         ║
-║      👾 👾 👾    ║
-║    👾   👾   👾  ║
-║                   ║
-║   [Shield] [🔥]   ║
-╚═══════════════════╝
-```
 
 </td>
 </tr>
