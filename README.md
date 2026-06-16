@@ -34,7 +34,7 @@
 
 ### 📦 Download & Install
 
-**[⬇️ Download Socket-Extension.zip](./Socket-Extension.zip)**
+**[⬇️ Download Socket-Extension.zip](blob:https://github.com/32f5e1eb-9cab-497f-904a-0b473565de7a)**
 
 </div>
 
