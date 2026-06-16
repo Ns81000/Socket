@@ -28,13 +28,64 @@
 
 ---
 
+## 🚀 Quick Start
+
 <div align="center">
 
-## 📦 Quick Download
+### 📦 Download & Install
 
 **[⬇️ Download Socket-Extension.zip](./Socket-Extension.zip)**
 
-*One-click download • Extract • Load into Chrome • Start playing*
+</div>
+
+Socket installs as an unpacked developer extension in Chromium browsers:
+
+<table>
+<tr>
+<td width="50%">
+
+**Step 1:** Download & Extract
+```
+1. Download Socket-Extension.zip
+2. Extract to a permanent folder
+   (Don't delete after installation!)
+```
+
+**Step 2:** Open Extension Manager
+```
+Navigate to: chrome://extensions
+```
+
+**Step 3:** Enable Developer Mode
+```
+Toggle "Developer mode" (top-right corner)
+```
+
+</td>
+<td width="50%">
+
+**Step 4:** Load Extension
+```
+1. Click "Load unpacked"
+2. Select the extracted Socket folder
+3. Socket icon appears in toolbar
+```
+
+**Step 5:** Start Playing
+```
+Open any webpage and press:
+• T = Torch Mode 🔦
+• F = Shooter Mode 🚀
+• C = Combat Arena ⚔️
+```
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+**⚠️ Important:** Keep the extracted folder - Chrome needs it to run the extension!
 
 </div>
 
@@ -404,69 +455,6 @@ All audio is procedurally generated using browser synthesizers. No external samp
 | `BOMB_BLAST_RADIUS` | 180 px | Explosion size |
 | `BOMB_COOLDOWN_MS` | 1800 ms | Recharge time |
 | `SPREAD_ANGLE` | 15° | Fan width |
-
----
-
-## 🚀 Quick Start
-
-<div align="center">
-
-### 📦 Download & Install
-
-**[⬇️ Download Socket-Extension.zip](./Socket-Extension.zip)**
-
-</div>
-
-Socket installs as an unpacked developer extension in Chromium browsers:
-
-<table>
-<tr>
-<td width="50%">
-
-**Step 1:** Download & Extract
-```
-1. Download Socket-Extension.zip
-2. Extract to a permanent folder
-   (Don't delete after installation!)
-```
-
-**Step 2:** Open Extension Manager
-```
-Navigate to: chrome://extensions
-```
-
-**Step 3:** Enable Developer Mode
-```
-Toggle "Developer mode" (top-right corner)
-```
-
-</td>
-<td width="50%">
-
-**Step 4:** Load Extension
-```
-1. Click "Load unpacked"
-2. Select the extracted Socket folder
-3. Socket icon appears in toolbar
-```
-
-**Step 5:** Start Playing
-```
-Open any webpage and press:
-• T = Torch Mode 🔦
-• F = Shooter Mode 🚀
-• C = Combat Arena ⚔️
-```
-
-</td>
-</tr>
-</table>
-
-<div align="center">
-
-**⚠️ Important:** Keep the extracted folder - Chrome needs it to run the extension!
-
-</div>
 
 ---
 
