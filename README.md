@@ -28,6 +28,18 @@
 
 ---
 
+<div align="center">
+
+## 📦 Quick Download
+
+**[⬇️ Download Socket-Extension.zip](./Socket-Extension.zip)**
+
+*One-click download • Extract • Load into Chrome • Start playing*
+
+</div>
+
+---
+
 ## 🌟 What is Socket?
 
 <table>
@@ -177,38 +189,48 @@ A standalone, high-octane arcade game. Battle 10 waves of increasingly challengi
 
 <table>
 <tr>
-<td>
+<td width="25%">
 
-**Top-Left Panel** (Score & Wave)
+**Top-Left Panel**  
+*Score & Wave*
+
 - Current Score
 - High Score (persisted)
 - Wave Status (1-10 / FINAL)
 - Progress bar of defeated enemies
 
 </td>
-<td>
+<td width="25%">
 
-**Top-Right Panel** (System Status)
+**Top-Right Panel**  
+*System Status*
+
 - 🔊 Music mute indicator
 - ⏱️ Active power-up timers
 - 📊 Real-time system info
+- Current game state
 
 </td>
-<td>
+<td width="25%">
 
-**Bottom-Left Panel** (Radar)
+**Bottom-Left Panel**  
+*Radar*
+
 - Active radar sweep
 - Player position (Cyan dot)
 - Power-ups (colored blips)
 - Enemies (Red/Purple/Magenta)
 
 </td>
-<td>
+<td width="25%">
 
-**Bottom-Right Panel** (Combo)
+**Bottom-Right Panel**  
+*Combo*
+
 - Active combo multiplier
 - Yellow decay bar
 - Resets after 1.5s idle
+- Bonus scoring system
 
 </td>
 </tr>
@@ -389,7 +411,9 @@ All audio is procedurally generated using browser synthesizers. No external samp
 
 <div align="center">
 
-### Installation Guide
+### 📦 Download & Install
+
+**[⬇️ Download Socket-Extension.zip](./Socket-Extension.zip)**
 
 </div>
 
@@ -399,12 +423,19 @@ Socket installs as an unpacked developer extension in Chromium browsers:
 <tr>
 <td width="50%">
 
-**Step 1:** Open Extension Manager
+**Step 1:** Download & Extract
+```
+1. Download Socket-Extension.zip
+2. Extract to a permanent folder
+   (Don't delete after installation!)
+```
+
+**Step 2:** Open Extension Manager
 ```
 Navigate to: chrome://extensions
 ```
 
-**Step 2:** Enable Developer Mode
+**Step 3:** Enable Developer Mode
 ```
 Toggle "Developer mode" (top-right corner)
 ```
@@ -412,21 +443,30 @@ Toggle "Developer mode" (top-right corner)
 </td>
 <td width="50%">
 
-**Step 3:** Load Extension
+**Step 4:** Load Extension
 ```
-Click "Load unpacked"
-Select this directory
+1. Click "Load unpacked"
+2. Select the extracted Socket folder
+3. Socket icon appears in toolbar
 ```
 
-**Step 4:** Start Playing
+**Step 5:** Start Playing
 ```
-Open any webpage
-Press T, F, or C
+Open any webpage and press:
+• T = Torch Mode 🔦
+• F = Shooter Mode 🚀
+• C = Combat Arena ⚔️
 ```
 
 </td>
 </tr>
 </table>
+
+<div align="center">
+
+**⚠️ Important:** Keep the extracted folder - Chrome needs it to run the extension!
+
+</div>
 
 ---
 
@@ -500,8 +540,6 @@ Have ideas to make Socket even better?
 ---
 
 <div align="center">
-
-### Made with ❤️ by the Socket Team
 
 **Transform the web. One click at a time.**
 
