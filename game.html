@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1280, shrink-to-fit=no">
+  <title>Socket Combat Arena</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+  <!-- Arena Canvas -->
+  <canvas id="game-canvas"></canvas>
+
+  <!-- Controls overlay card (fades out when game starts) -->
+  <div id="controls-card" class="glass-panel">
+    <h2>COMBAT ARENA</h2>
+    <div class="control-row">
+      <span class="key">W / S</span>
+      <span class="desc">Thrust / Brake</span>
+    </div>
+    <div class="control-row">
+      <span class="key">A / D</span>
+      <span class="desc">Rotate Fighter</span>
+    </div>
+    <div class="control-row">
+      <span class="key">Space</span>
+      <span class="desc">Fire Weapon</span>
+    </div>
+    <div class="control-row">
+      <span class="key">1 / 2 / 3</span>
+      <span class="desc">Single / Spread / Bomb</span>
+    </div>
+    <div class="control-row">
+      <span class="key">M</span>
+      <span class="desc">Toggle Music Loop</span>
+    </div>
+    <div class="control-row">
+      <span class="key">C / Esc</span>
+      <span class="desc">Exit to Webpage</span>
+    </div>
+    <div class="start-hint">Press any movement key to launch fighter...</div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>

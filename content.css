@@ -1,0 +1,114 @@
+/* =====================================================================
+   Socket — content.css
+   All styles are scoped under the #socket- prefix to avoid conflicts
+   with the host page. We avoid !important except where required for
+   reliable z-index stacking and cursor overrides on hostile pages.
+
+   Others load. Socket unloads.
+   ===================================================================== */
+
+/* ---------------------------------------------------------------------
+   Master overlay container.
+   Fixed to the viewport, covers everything, sits at the maximum z-index.
+   pointer-events:none lets the page receive mouse events so that
+   document.elementFromPoint() can hit-test real page elements.
+   --------------------------------------------------------------------- */
+#socket-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  pointer-events: none;            /* let events fall through to the page */
+  z-index: 2147483647 !important;  /* maximum 32-bit signed int */
+  background: transparent;
+  overflow: hidden;
+  will-change: background;
+  /* The dark mask + torch cutout are applied inline via JS as a
+     radial-gradient so the torch position can update each frame. */
+}
+
+/* The darkening layer. The radial-gradient "hole" is set inline by JS. */
+#socket-overlay .socket-mask {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 1;                      /* below the FX canvas */
+}
+
+/* ---------------------------------------------------------------------
+   Custom crosshair cursor applied to the whole document while active.
+   --------------------------------------------------------------------- */
+html.socket-active,
+html.socket-active * {
+  cursor: crosshair !important;
+}
+
+/* ---------------------------------------------------------------------
+   Shooter / FX canvas — ship, bullets, particles, explosion flashes.
+   Sits ABOVE the dark mask so glowing effects pop against the darkness,
+   but BELOW the code inspector panel. Still passes mouse events through.
+   --------------------------------------------------------------------- */
+#socket-fx-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;                      /* above mask, below code panel */
+}
+
+
+/* ---------------------------------------------------------------------
+   Shatter shards — detached clones flown outward by JS via inline
+   transform transitions. Base class just guarantees they never capture
+   pointer events and are excluded from Socket's own hit-testing.
+   --------------------------------------------------------------------- */
+.socket-shard {
+  pointer-events: none !important;
+}
+
+/* ---------------------------------------------------------------------
+   Element Hit Flash & Enemy Ships
+   --------------------------------------------------------------------- */
+.socket-hit-flash {
+  filter: brightness(2.5) saturate(2) !important;
+  transition: filter 0.05s ease-out !important;
+}
+
+@keyframes enemy-glow {
+  0% {
+    outline-color: rgba(255, 60, 0, 0.8);
+    box-shadow: 0 0 10px rgba(255, 60, 0, 0.6);
+  }
+  50% {
+    outline-color: rgba(255, 120, 0, 1);
+    box-shadow: 0 0 20px rgba(255, 120, 0, 0.9);
+  }
+  100% {
+    outline-color: rgba(255, 60, 0, 0.8);
+    box-shadow: 0 0 10px rgba(255, 60, 0, 0.6);
+  }
+}
+
+.socket-enemy-ship {
+  outline: 2px solid #FF3C00 !important;
+  pointer-events: auto !important;
+  animation: enemy-glow 1.5s infinite ease-in-out !important;
+  box-sizing: border-box !important;
+}
+
+/* Active Scan mode outline for destroyable elements */
+.socket-scan-active .socket-target {
+  outline: 2px dashed #00f0ff !important;
+  box-shadow: 0 0 8px rgba(0, 240, 255, 0.5) !important;
+  transition: outline 0.15s ease, box-shadow 0.15s ease;
+}
+

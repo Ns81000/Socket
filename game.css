@@ -1,0 +1,116 @@
+/* =====================================================================
+   Socket Combat Arena — game.css
+   ===================================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: radial-gradient(circle at center, #0a0813 0%, #030206 100%);
+  font-family: 'Rajdhani', 'Segoe UI', Tahoma, sans-serif;
+  color: #ffffff;
+  user-select: none;
+}
+
+#game-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
+}
+
+/* Glassmorphic Panel Overlay */
+.glass-panel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background: rgba(8, 8, 12, 0.88);
+  border: 1.5px solid rgba(0, 240, 255, 0.3);
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.15), inset 0 0 15px rgba(0, 240, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 12px;
+  padding: 30px;
+  width: 380px;
+  text-align: center;
+  transition: opacity 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  pointer-events: auto;
+}
+
+.glass-panel.fade-out {
+  opacity: 0;
+  transform: translate(-50%, -45%) scale(0.95);
+  pointer-events: none;
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  color: #00F0FF;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.6);
+  margin-bottom: 20px;
+}
+
+.control-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
+}
+
+.control-row:last-of-type {
+  border-bottom: none;
+}
+
+.key {
+  font-family: 'Orbitron', monospace;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.desc {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.start-hint {
+  margin-top: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #00FF66;
+  text-shadow: 0 0 8px rgba(0, 255, 102, 0.4);
+  letter-spacing: 1px;
+  animation: pulse-glow 2s infinite ease-in-out;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.6;
+    text-shadow: 0 0 4px rgba(0, 255, 102, 0.2);
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 12px rgba(0, 255, 102, 0.7);
+  }
+}
