@@ -127,7 +127,7 @@ Open any webpage and press:
 
 <table>
 <tr>
-<td width="60%">
+<td width="50%">
 
 Plunge any webpage into shadow and light with a dynamic torch overlay. Your cursor becomes a warm, radiant spotlight cutting through an 85% black overlay.
 
@@ -136,11 +136,25 @@ Plunge any webpage into shadow and light with a dynamic torch overlay. Your curs
 - 🎚️ **Dynamic Resize** — Scroll to adjust spotlight radius from 30px to 400px
 - 🎯 **Smooth Tracking** — Spotlight follows cursor naturally across the page
 
+</td>
+<td width="50%">
+
 **Controls:**
+
 | Action | Key |
 |--------|-----|
 | Toggle Torch | `T` |
 | Resize Spotlight | `Scroll Up/Down` |
+
+<br>
+
+**Technical Specs:**
+- Overlay opacity: 85% black
+- Default radius: 120px
+- Min radius: 30px
+- Max radius: 400px
+- Flicker intensity: 2.5%
+- Performance: 60 FPS
 
 </td>
 </tr>
@@ -152,7 +166,7 @@ Plunge any webpage into shadow and light with a dynamic torch overlay. Your curs
 
 <table>
 <tr>
-<td width="60%">
+<td width="50%">
 
 Pilot a nimble fighter ship and annihilate destructible webpage elements. Features Asteroids-style physics and devastating particle effects.
 
@@ -163,13 +177,18 @@ Pilot a nimble fighter ship and annihilate destructible webpage elements. Featur
 - 🎯 **Smart Targeting** — Avoids layout wrappers, targets content
 
 **Element Durability:**
+
 | Size | HP |
 |------|-----|
 | Small (< 15K px²) | 1 HP |
 | Medium (< 60K px²) | 2 HP |
 | Large (≥ 60K px²) | 4 HP |
 
+</td>
+<td width="50%">
+
 **Controls:**
+
 | Action | Key |
 |--------|-----|
 | Toggle Shooter | `F` |
@@ -178,6 +197,20 @@ Pilot a nimble fighter ship and annihilate destructible webpage elements. Featur
 | Switch Weapon | `1/2/3` |
 | Target Scan | `B` |
 | Launch Combat Arena | `C` |
+
+<br>
+
+**Ship Specs:**
+- Max speed: 500 px/s
+- Acceleration: 550 px/s²
+- Turn rate: 3.8 rad/s
+- Ship size: 16px
+- Drag factor: 0.982
+
+**Weapons:**
+- Single Shot: 22 px/frame
+- Bomb: 7 px/frame, 150px blast
+- Spread: ±15° fan angle
 
 </td>
 </tr>
@@ -189,7 +222,7 @@ Pilot a nimble fighter ship and annihilate destructible webpage elements. Featur
 
 <table>
 <tr>
-<td width="60%">
+<td width="50%">
 
 A standalone, high-octane arcade game. Battle 10 waves of increasingly challenging AI fleets—from nimble Scouts to massive Bosses. Survive and claim victory with style.
 
@@ -210,6 +243,9 @@ A standalone, high-octane arcade game. Battle 10 waves of increasingly challengi
 | **Support Ship** | Healer role | Shields nearby allies |
 | **Boss** | Final challenge | Massive HP + patterns |
 
+</td>
+<td width="50%">
+
 **Power-up System:**
 
 | Power-up | Color | Effect | Duration |
@@ -218,7 +254,10 @@ A standalone, high-octane arcade game. Battle 10 waves of increasingly challengi
 | 🔥 Triple Shot | Red | 3-line laser | 8s |
 | ⚡ Engine Overdrive | Green | 2x handling & accel | 8s |
 
+<br>
+
 **Controls:**
+
 | Action | Key |
 |--------|-----|
 | Launch/Thrust | `W` |
@@ -229,6 +268,16 @@ A standalone, high-octane arcade game. Battle 10 waves of increasingly challengi
 | Toggle Music | `M` |
 | Replay/Restart | `R` |
 | Exit Game | `C/Esc` |
+
+<br>
+
+**Arena Specs:**
+- Max speed: 550 px/s
+- Acceleration: 650 px/s²
+- Turn rate: 4.2 rad/s
+- 4-panel HUD system
+- Real-time radar tracking
+- Combo multiplier system
 
 </td>
 </tr>
@@ -291,7 +340,9 @@ A standalone, high-octane arcade game. Battle 10 waves of increasingly challengi
 
 ## ⌨️ Complete Keyboard Reference
 
-<div align="center">
+<table>
+<tr>
+<td width="50%">
 
 ### 🌐 Webpage Mode
 
@@ -308,6 +359,9 @@ A standalone, high-octane arcade game. Battle 10 waves of increasingly challengi
 | `Scroll ↑/↓` | Adjust Spotlight Size | Torch ON |
 | `Esc` | Exit active mode | Active |
 
+</td>
+<td width="50%">
+
 ### 🎮 Combat Arena Mode
 
 | Key | Action | Context |
@@ -320,9 +374,13 @@ A standalone, high-octane arcade game. Battle 10 waves of increasingly challengi
 | `C / Esc` | 🚪 Exit Game | Anytime |
 | `Click / Any Key` | 🚀 Launch Ship | Start Screen |
 
+<br>
+
 **Note:** Keyboard inputs are safely ignored when typing in webpage text fields.
 
-</div>
+</td>
+</tr>
+</table>
 
 ---
 
@@ -421,6 +479,10 @@ All audio is procedurally generated using browser synthesizers. No external samp
 
 ## ⚙️ Advanced Configuration
 
+<table>
+<tr>
+<td width="50%">
+
 ### 📊 Webpage Mode Tuning (`content.js`)
 
 | Parameter | Value | Purpose |
@@ -441,6 +503,9 @@ All audio is procedurally generated using browser synthesizers. No external samp
 | `MAX_SPEED` | 500 px/s | Speed cap |
 | `DRAG` | 0.982 | Friction factor |
 
+</td>
+<td width="50%">
+
 ### 🎮 Combat Arena Tuning (`game.js`)
 
 | Parameter | Value | Purpose |
@@ -455,6 +520,10 @@ All audio is procedurally generated using browser synthesizers. No external samp
 | `BOMB_BLAST_RADIUS` | 180 px | Explosion size |
 | `BOMB_COOLDOWN_MS` | 1800 ms | Recharge time |
 | `SPREAD_ANGLE` | 15° | Fan width |
+
+</td>
+</tr>
+</table>
 
 ---
 
